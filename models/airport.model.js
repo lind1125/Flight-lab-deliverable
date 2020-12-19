@@ -1,11 +1,13 @@
 const mongoose = require('mongoose')
 
+
 const Airport = mongoose.model (
-    "Airport",
+    'Airport',
     new mongoose.Schema({
+        name: String,
         country: String,
         terminals: [],
-        opened: Date,
+        opened: Date
     })
 )
 
